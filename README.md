@@ -2,9 +2,5 @@
 
 
 ```
-npx @serveside/csm
-
-# or
-
-npx @serveside/check-source-map
+npx @serveside/check-source-map <sourcemap-filename> -l <line-number> -c <column-number>
 ```
