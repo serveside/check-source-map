@@ -42,3 +42,15 @@ $ npx @serveside/check-source-map https://some-website.example.com/js/prod.b6e73
   name: 'someMethodName'
 }
 ```
+
+---
+
+### Using global npm module
+
+Run:
+
+```zsh
+npm i -g @serveside/check-source-map
+```
+
+Then can run `s-csm` instead of `npx @serveside/check-source-map`
