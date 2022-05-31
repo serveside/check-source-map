@@ -5,7 +5,6 @@ import yargsCli from "yargs/yargs";
 import { hideBin } from "yargs/helpers";
 import { readFile } from "fs";
 import { promisify } from "util";
-import pkg from "./package.json";
 
 const readFileAsync = promisify(readFile);
 
@@ -25,7 +24,7 @@ async function readSourcemap({ sourcemap, line = 1, column = 0 }: Read) {
 }
 
 yargsCli(hideBin(process.argv))
-    .scriptName(pkg.name)
+    .scriptName('@serveside/check-source-map')
     .command('$0 <sourcemap>','get source line/column from sourcemap', {
         line: {
             alias: 'l',
