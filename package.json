@@ -16,7 +16,7 @@
     "build": "tsc -p ."
   },
   "dependencies": {
-    "node-fetch": "^2.6.6",
+    "node-fetch": "^2.6.7",
     "source-map": "^0.7.3",
     "yargs": "^17.5.1"
   },
