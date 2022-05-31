@@ -1,0 +1,27 @@
+{
+  "name": "@serveside/check-source-map",
+  "version": "0.0.1",
+  "main": "bin/index.js",
+  "files": [
+    "bin/index.js"
+  ],
+  "bin": {
+    "@serveside/check-source-map": "bin/index.js",
+    "@serveside/csp": "bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "source-map": "^0.7.3",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "@types/yargs": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "typescript": "^4.7.2"
+  }
+}
