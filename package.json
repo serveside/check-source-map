@@ -5,7 +5,9 @@
   "files": [
     "bin/index.js"
   ],
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "@serveside/check-source-map": "bin/index.js",
     "@serveside/csm": "bin/index.js"
