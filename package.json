@@ -7,7 +7,7 @@
   ],
   "bin": {
     "@serveside/check-source-map": "bin/index.js",
-    "@serveside/csp": "bin/index.js"
+    "@serveside/csm": "bin/index.js"
   },
   "scripts": {
     "build": "tsc -p ."
