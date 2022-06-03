@@ -54,3 +54,25 @@ npm i -g @serveside/check-source-map
 ```
 
 Then can run `s-csm` instead of `npx @serveside/check-source-map`
+
+-----
+
+This module can also be used programatically:
+
+```ts
+const csm = require('@serveside/check-source-map');
+
+async function someMethod() {
+  const result = await csm.readLocalSourcemap({
+    source: './some_local_map.js.map',
+    line: 1,
+    column 134
+  });
+
+  console.log(result);
+}
+```
+
+The `result` would be the same values that are echoed out by the cli.
+
+Can also run with the same parameters for `csm.readRemoteSourcemap`.

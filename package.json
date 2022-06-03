@@ -1,19 +1,22 @@
 {
   "name": "@serveside/check-source-map",
-  "version": "1.0.0",
-  "main": "bin/index.js",
+  "version": "1.0.1",
+  "main": "dist/index.js",
   "files": [
-    "bin/index.js"
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
   ],
   "publishConfig": {
     "access": "public"
   },
   "bin": {
-    "@serveside/check-source-map": "bin/index.js",
-    "s-csm": "bin/index.js"
+    "@serveside/check-source-map": "dist/cli/index.js",
+    "s-csm": "dist/cli/index.js"
   },
   "scripts": {
-    "build": "tsc -p ."
+    "prebuild": "echo 'Building library' && npx rimraf dist",
+    "build": "tsc -p .",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "node-fetch": "^2.6.7",
