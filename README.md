@@ -56,8 +56,9 @@ npm i -g @serveside/check-source-map
 Then can run `s-csm` instead of `npx @serveside/check-source-map`
 
 -----
+## Running programmatically
 
-This module can also be used programatically:
+This module can also be used programmatically:
 
 ```ts
 const csm = require('@serveside/check-source-map');
